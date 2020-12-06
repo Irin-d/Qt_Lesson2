@@ -40,7 +40,7 @@ void MainWindow::on_button_ShowAllPersons_clicked()
     QString temp = "";
     foreach (auto person, listPerson)
     {
-        temp += person.GetName() + " " + person.GetSex() + " " + person.GetBirthDay().toString(Qt::SystemLocaleShortDate) + "\n";
+        temp += person.name + " " + person.sex + " " + person.birthDay.toString(Qt::SystemLocaleShortDate) + "\n";
     }
 
     ui->label_AllPersons->setText(temp);
